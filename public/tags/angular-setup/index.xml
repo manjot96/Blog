@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Brute Coding</title>
-    <link>https://www.brutecoding.com/</link>
-    <description>Recent content on Brute Coding</description>
+    <title>Angular Setup on Brute Coding</title>
+    <link>https://www.brutecoding.com/tags/angular-setup/</link>
+    <description>Recent content in Angular Setup on Brute Coding</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2017. All rights reserved.</copyright>
     <lastBuildDate>Sat, 03 Feb 2018 22:27:54 -0800</lastBuildDate>
     
-	<atom:link href="https://www.brutecoding.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.brutecoding.com/tags/angular-setup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>https://www.brutecoding.com/posts/setting-up-environment-for-angular-development/</guid>
       <description>Tools you&amp;rsquo;ll be requiring during this process  node.js angular-cli Any text editor (here are some I would recommend):  Visual Studio Code Atom Sublime 3 Notepad++   Installing node.js  I&amp;rsquo;d recommend downloading the LTS build (current build is for devs and might have some bugs in it therefore it might be unstable)   Do not change these options unless you know what you are doing It might impact you to not be able to access node from the cmd if you make some changes here  Installing angular-cli  Start off with closing all your cmd &amp;amp; powershell windows Ensure you have node installed:  Open cmd (by searching from the start menu or by pressing windows + r and typing in cmd) Type node -v followed by npm -v; If you recieve an error on any of the following commands go through the previous step  Install angular-cli by running npm i -g @angular/cli (-g flag enabled the flag for global) Now you&amp;rsquo;re good to go and start creating angular applications  Creating your first Angular application  Open a shell at a location where you want the new application to be installed e.</description>
-    </item>
-    
-    <item>
-      <title>Documentation</title>
-      <link>https://www.brutecoding.com/doc/</link>
-      <pubDate>Wed, 21 Dec 2016 01:25:44 -0800</pubDate>
-      
-      <guid>https://www.brutecoding.com/doc/</guid>
-      <description>Simple Documentation for getting started with Hugo Understanding how it works  Main file is config.toml  Don&amp;rsquo;t really need to understand the syntax Main stuff is the baseurl, title, and theme you&amp;rsquo;ll be using to setup new theme just clone the git repo for that theme into themes folder and change theme = &amp;lsquo;folderNameOfTheme&amp;rsquo; in config.toml Most commands are different theme to theme Every theme has an example site if you want to get started with that  Creating a new post  All posts are put underneath content-&amp;gt;posts To create a post you can do hugo new post my-new-post It automatically shows up on the blog  Testing your blog  hugo serve -w deploys it locally to localhost:1313  Deploying to server  type hugo in the root dir and it&amp;rsquo;ll generate a public folder that just contains the html files for your entire website  MD syntax on blog posts  https://github.</description>
     </item>
     
   </channel>

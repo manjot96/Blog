@@ -1,9 +1,23 @@
----
-title: "Setting Up Environment for Angular Development"
-date: 2018-02-03T22:27:54-08:00
-draft: true
----
-
++++
+title = "Setting Up Environment for Angular Development"
+description = "Angular Environment"
+tags = [
+    "angular setup",
+    "angular environment",
+    "angular 5",
+    "development",
+    "angular tutorial",
+    "angular"
+]
+date = "2018-02-03T22:27:54-08:00"
+categories = [
+    "Development",
+    "Angular",
+    "Angular 5",
+    "Environment",
+    "Tutorial"
+]
++++
 
 ### Tools you'll be requiring during this process
 1. [node.js](https://nodejs.org/en/download/)
