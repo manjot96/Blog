@@ -15,6 +15,7 @@ before_script:
   - rm public/* -r && rmdir public
 
 script:
+    - chmod u+x ./bin/hugo
     - ls
     - ./bin/hugo
     - ls
