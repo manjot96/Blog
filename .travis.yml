@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+  - "6"
+
+before_install:
+  - sudo apt-get install hugo
+
+branches:
+  only:
+    - master
+
+before_script:
+  - rm public/* -r && rmdir public
+
+script:
+    - ls -al static/css/style.css
+    - hugo
+
+after_success: bash ./bin/deploy.sh
