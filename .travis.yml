@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "6"
+  - "9.5.0"
 
 addons:
   ssh_known_hosts:
@@ -13,7 +13,7 @@ branches:
 
 before_install: 
   - sudo apt-get install sshpass
-  - npm i -g npm-cli
+  - npm i -g hugo-cli
 
 before_script:
   - rm public/* -r && rmdir public 
