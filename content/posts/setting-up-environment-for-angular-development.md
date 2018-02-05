@@ -53,6 +53,8 @@ categories = [
 - Run the command `ng new your-app-name-here`
 - The files will be generated instantaneously, however it will take angular to finish installing all the packages a little while depending on your internet speed
 
+
 ---
+
 
 Congratulations 🎉🎉🎉🎉! You've setup your environment for Angular Development and are ready to create Angular Applications! Angular has a great tutorial to get you started for your first application; you can access it by clicking [here](https://angular.io/tutorial).
