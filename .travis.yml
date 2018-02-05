@@ -19,6 +19,3 @@ before_deploy:
 
 deploy:
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public ax16qlpf2e9z@160.153.61.169:www/
-  on:
-    branch: master
