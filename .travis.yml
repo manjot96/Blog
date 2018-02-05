@@ -1,8 +1,3 @@
-language: node_js
-
-node_js:
-  - "6"
-
 addons:
   ssh_known_hosts:
   - 160.153.61.169
@@ -18,6 +13,4 @@ script:
     - ls
 
 after_success:
-  - sftp ax16qlpf2e9z@160.153.61.169
-  - yes
   - bash ./bin/deploy.sh
