@@ -1,3 +1,8 @@
+language: node_js
+
+node_js:
+  - "6"
+
 addons:
   ssh_known_hosts:
   - 160.153.61.169
@@ -7,10 +12,20 @@ branches:
     - master
 
 before_script:
+  - ssh-copy-id -i ./bin/id_rsa.pub ax16qlpf2e9z@160.153.61.169
   - rm public/* -r && rmdir public
 
 script:
     - ls
+    - ./bin/hugo
+    - ls
 
-after_success:
-  - bash ./bin/deploy.sh
+before_deploy:
+  - ssh-add ./bin/id_rsa
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public ax16qlpf2e9z@160.153.61.169:www/
+  on:
+    branch: master

@@ -11,6 +11,5 @@ if [[ "master" != "$TRAVIS_BRANCH" ]]; then
 fi
 
 sftp ax16qlpf2e9z@160.153.61.169
-yes
 lls
 exit
