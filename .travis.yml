@@ -20,6 +20,7 @@ before_script:
 
 script:
   - hugo
+  - ls
 
-after_success:
+after_script:
   - sshpass -p 'Manjot123?' rsync -r --delete-after --quiet ./public ax16qlpf2e9z@160.153.61.169:www
