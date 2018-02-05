@@ -1,7 +1,7 @@
 baseURL = "https://www.brutecoding.com/"
 title = "Brute Coding"
 languageCode = "en-us"
-theme = "Pickles"
+theme = "pickles"
 # Copyright notice. This is displayer in the footer.
 copyright = "Copyright &copy; 2017. All rights reserved."
 
