@@ -10,3 +10,21 @@ copyright = "Copyright &copy; 2017. All rights reserved."
 
     favicon   = "images/thumbnail.png"
     thumbnail = "images/thumbnail.png"
+
+    npm = "brutecoding"
+    github = "manjot96"
+    linkedin = "manjotkhalsa"
+
+    ga_api_key = "UA-113575034-1"
+
+    disqus = "brutecoding"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Documentation"
+    url = "/doc"
+    weight = 2
