@@ -14,8 +14,5 @@ branches:
 before_install: 
   - sudo apt-get install sshpass 
 
-deploy:
-  skip_cleanup: true
-  script:  sshpass -p 'Manjot123?' rsync -r --delete-after --quiet ./public ax16qlpf2e9z@160.153.61.169:www
-  on:
-    branch: master
+after_success:
+  - sshpass -p 'Manjot123?' rsync -r --delete-after --quiet ./public ax16qlpf2e9z@160.153.61.169:www
