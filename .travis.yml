@@ -12,16 +12,11 @@ branches:
     - master
 
 before_script:
-  - rm public/* -r && rmdir public
+  - ssh-add ./bin/id_rsa
+  - ssh-add ./bin/id_rsa.pub
 
 script:
-    - chmod u+x ./bin/hugo
     - ls
-    - ./bin/hugo
-    - ls
-
-before_deploy:
-  - ssh-add ./bin/id_rsa
 
 deploy:
   provider: script
