@@ -18,7 +18,6 @@ before_deploy:
   - ssh-add ./bin/deploy_rsa
 
 deploy:
-  provider: script
   skip_cleanup: true
   script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public ax16qlpf2e9z@160.153.61.169:www/
   on:
