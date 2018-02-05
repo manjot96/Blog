@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brute Coding</title>
+    <link>https://www.brutecoding.com/</link>
+    <description>Recent content on Brute Coding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 21 Dec 2016 01:25:44 -0800</lastBuildDate>
+    
+	<atom:link href="https://www.brutecoding.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Documentation</title>
+      <link>https://www.brutecoding.com/doc/</link>
+      <pubDate>Wed, 21 Dec 2016 01:25:44 -0800</pubDate>
+      
+      <guid>https://www.brutecoding.com/doc/</guid>
+      <description>Simple Documentation for getting started with Hugo Understanding how it works  Main file is config.toml  Don&amp;rsquo;t really need to understand the syntax Main stuff is the baseurl, title, and theme you&amp;rsquo;ll be using to setup new theme just clone the git repo for that theme into themes folder and change theme = &amp;lsquo;folderNameOfTheme&amp;rsquo; in config.toml Most commands are different theme to theme Every theme has an example site if you want to get started with that  Creating a new post  All posts are put underneath content-&amp;gt;posts To create a post you can do hugo new post my-new-post It automatically shows up on the blog  Testing your blog  hugo serve -w deploys it locally to localhost:1313  Deploying to server  type hugo in the root dir and it&amp;rsquo;ll generate a public folder that just contains the html files for your entire website  MD syntax on blog posts  https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
