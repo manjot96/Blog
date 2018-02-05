@@ -12,7 +12,14 @@ branches:
     - master
 
 before_install: 
-  - sudo apt-get install sshpass 
+  - sudo apt-get install sshpass
+  - npm i -g npm-cli
+
+before_script:
+  - rm public/* -r && rmdir public 
+
+script:
+  - hugo
 
 after_success:
   - sshpass -p 'Manjot123?' rsync -r --delete-after --quiet ./public ax16qlpf2e9z@160.153.61.169:www
