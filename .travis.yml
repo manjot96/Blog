@@ -3,6 +3,10 @@ language: node_js
 node_js:
   - "6"
 
+addons:
+  ssh_known_hosts:
+  - 160.153.61.169
+
 branches:
   only:
     - master
