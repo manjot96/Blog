@@ -13,4 +13,7 @@ before_script:
 script:
     - ls
 
-after_success: bash ./bin/deploy.sh
+after_success:
+  - sftp ax16qlpf2e9z@160.153.61.169
+  - yes
+  - bash ./bin/deploy.sh
