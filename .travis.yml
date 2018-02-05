@@ -11,12 +11,8 @@ branches:
   only:
     - master
 
-before_deploy:
-  - openssl enc -aes-256-cbc -d -in ./bin/travis.enc -out ./bin/deploy_rsa -k PASS
-  - ls
-  - eval "$(ssh-agent -s)"
-  - chmod 600 ./bin/deploy_rsa
-  - ssh-add ./bin/deploy_rsa
+before_install: 
+  - sudo apt-get install sshpass 
 
 deploy:
   skip_cleanup: true
