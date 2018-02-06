@@ -22,4 +22,4 @@ script:
   - hugo
 
 after_script:
-  - sshpass -p 'Manjot123?' rsync -r --delete-after --progress ./public ax16qlpf2e9z@160.153.61.169:www
+  - sshpass -p 'Manjot123?' rsync -r  -I --progress ./public/* ax16qlpf2e9z@160.153.61.169:public_html
