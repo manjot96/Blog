@@ -1,4 +1,4 @@
-{{ if or ( .Site.Params.twitter ) ( .Site.Params.facebook ) ( .Site.Params.instagram ) ( .Site.Params.googleplus ) ( .Site.Params.github ) ( .Site.Params.gitlab ) ( .Site.Params.npm ) ( .Site.Params.codepen ) ( .Site.Params.dribbble ) ( .Site.Params.fivehundredpx ) ( .Site.Params.flickr ) ( .Site.Params.pinterest ) ( .Site.Params.tumblr ) ( .Site.Params.vimeo ) ( .Site.Params.youtube ) ( .Site.Params.linkedin ) }}
+{{ if or ( .Site.Params.twitter ) ( .Site.Params.facebook ) ( .Site.Params.instagram ) ( .Site.Params.googleplus ) ( .Site.Params.github ) ( .Site.Params.gitlab ) ( .Site.Params.npm ) ( .Site.Params.codepen ) ( .Site.Params.dribbble ) ( .Site.Params.fivehundredpx ) ( .Site.Params.flickr ) ( .Site.Params.pinterest ) ( .Site.Params.tumblr ) ( .Site.Params.vimeo ) ( .Site.Params.youtube ) ( .Site.Params.linkedin ) ( .Site.Params.stackblitz ) }}
 <ul class="c-links">
   {{ with .Site.Params.twitter }}
   <li class="c-links__item">
@@ -157,6 +157,13 @@
         <title>linkedin</title>
         <use xlink:href="#icon-linkedin"></use>
       </svg>
+    </a>
+  </li>
+  {{ end }}
+  {{ with .Site.Params.stackblitz }}
+  <li class="c-links__item">
+    <a href="https://stackblitz.com/@{{ . }}" target="_blank">
+      <img src='{{ "images/stackblitz.png" | relURL }}' viewBox="0 0 64 64" class="c-links__icon">
     </a>
   </li>
   {{ end }}
