@@ -5,11 +5,7 @@
   <a href="#main" class="skip-link p-screen-reader-text">Skip to content</a>
   {{ partial "svgpack-sprite.html" . }}
   <header style="text-align: center;">
-    {{ if .IsPage }}
-    <a href="{{ .Site.BaseURL }}"><img src='{{ "images/logo.png" | relURL }}' class="img-fluid" width="500px"></a>
-    {{ else }}
-    <a href="{{ .Site.BaseURL }}"><img src='{{ "images/logo.png" | relURL }}' class="img-fluid" width="500px"></a>
-    {{ end }}
+    <a href="{{ .Site.BaseURL }}"><img src='{{ "images/logo_landscape.png" | relURL }}' class="img-fluid" width="1000px"></a>
     {{ with .Site.Params.subtitle }}
     <p class="p-subtitle">
       {{ . }}
