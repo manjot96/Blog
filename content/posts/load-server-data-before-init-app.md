@@ -20,8 +20,7 @@ categories = [
 
 Ever wanted to load server-side data before loading your application? Or ever wanted to make a HTTP request before having your application bootstrapped. You can do this by injecting `HttpClient` into `main.ts` by using the `StaticInjector` that was introduced in Angular 5. This is what your `main.ts` file should look like:
 
-
-```
+```javascript
 function interceptingHandler(backend, interceptors = []) {
     if (!interceptors) {
         return backend;
@@ -76,5 +75,6 @@ const httpClient = injector.get(HttpClient);
 ```
 
 #### Reasons you should use StaticInjector instead of APP_INITIALIZER
+
 - you need to load static data into your application before you bootstrap your main application
 - you need to make multiple HTTP requests before the first application
