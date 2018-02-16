@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.brutecoding.com/posts/load-server-data-before-init-app/</loc>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.brutecoding.com/posts/setting-up-environment-for-angular-development/</loc>
     <lastmod>2018-02-03T22:27:54-08:00</lastmod>
   </url>
@@ -14,7 +19,7 @@
   
   <url>
     <loc>https://www.brutecoding.com/tags/angular/</loc>
-    <lastmod>2018-02-03T22:27:54-08:00</lastmod>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -26,19 +31,43 @@
   
   <url>
     <loc>https://www.brutecoding.com/tags/angular-5/</loc>
-    <lastmod>2018-02-03T22:27:54-08:00</lastmod>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.brutecoding.com/categories/angular-5/</loc>
-    <lastmod>2018-02-03T22:27:54-08:00</lastmod>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.brutecoding.com/tags/angular-5-bootstrap-main.ts/</loc>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.brutecoding.com/tags/angular-bootstrapping-application/</loc>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.brutecoding.com/categories/angular-bootstrapping-application/</loc>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.brutecoding.com/tags/angular-bootstrapping-static-classes/</loc>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.brutecoding.com/tags/angular-environment/</loc>
-    <lastmod>2018-02-03T22:27:54-08:00</lastmod>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -56,7 +85,7 @@
   
   <url>
     <loc>https://www.brutecoding.com/</loc>
-    <lastmod>2018-02-03T22:27:54-08:00</lastmod>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -68,13 +97,13 @@
   
   <url>
     <loc>https://www.brutecoding.com/tags/development/</loc>
-    <lastmod>2018-02-03T22:27:54-08:00</lastmod>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.brutecoding.com/categories/development/</loc>
-    <lastmod>2018-02-03T22:27:54-08:00</lastmod>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -86,13 +115,13 @@
   
   <url>
     <loc>https://www.brutecoding.com/posts/</loc>
-    <lastmod>2018-02-03T22:27:54-08:00</lastmod>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.brutecoding.com/tags/</loc>
-    <lastmod>2018-02-03T22:27:54-08:00</lastmod>
+    <lastmod>2018-02-05T19:31:15-08:00</lastmod>
     <priority>0</priority>
   </url>
   

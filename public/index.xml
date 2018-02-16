@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 03 Feb 2018 22:27:54 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Feb 2018 19:31:15 -0800</lastBuildDate>
     
 	<atom:link href="https://www.brutecoding.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Load Server Side Data before Bootstrapping your Angular 5 application</title>
+      <link>https://www.brutecoding.com/posts/load-server-data-before-init-app/</link>
+      <pubDate>Mon, 05 Feb 2018 19:31:15 -0800</pubDate>
+      
+      <guid>https://www.brutecoding.com/posts/load-server-data-before-init-app/</guid>
+      <description>Ever wanted to load server-side data before loading your application? Or ever wanted to make a HTTP request before having your application bootstrapped. You can do this by injecting HttpClient into main.ts by using the StaticInjector that was introduced in Angular 5. This is what your main.ts file should look like:
+function interceptingHandler(backend, interceptors = []) { if (!interceptors) { return backend; } return interceptors.reduceRight((next, interceptor) =&amp;gt; new HttpInterceptorHandler(next, interceptor), backend); } class MyBrowserXHR implements XhrFactory { public build() { return new XMLHttpRequest(); } } class HttpInterceptorHandler { private next; private interceptor; constructor(next, interceptor) { this.</description>
+    </item>
     
     <item>
       <title>Setting Up Environment for Angular Development</title>

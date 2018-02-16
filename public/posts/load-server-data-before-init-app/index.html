@@ -4,16 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Development</title>
-  <meta property="og:title" content="Development" />
-  <meta name="twitter:title" content="Development" />
+  <title>Load Server Side Data before Bootstrapping your Angular 5 application</title>
+  <meta property="og:title" content="Load Server Side Data before Bootstrapping your Angular 5 application" />
+  <meta name="twitter:title" content="Load Server Side Data before Bootstrapping your Angular 5 application" />
   
 
+  
+  <meta name="description" content="Load server side data before bootstrapping your angular 5 application">
+  <meta property="og:description" content="Load server side data before bootstrapping your angular 5 application">
+  <meta name="twitter:description" content="Load server side data before bootstrapping your angular 5 application">
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Brute Coding" />
-  <meta property="og:url" content="https://www.brutecoding.com/tags/development/" />
+  <meta property="og:url" content="https://www.brutecoding.com/posts/load-server-data-before-init-app/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -21,7 +25,8 @@
   
 
   
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
+  
   
   
   <meta name="generator" content="Hugo 0.36.1" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -47,64 +52,149 @@
   </header>
   <main id="main" class="l-main">
 
-<h2 class="c-title p-tag-title">Development</h2>
 
-
-<article class="c-article p-list-article">
+<article class="p-article">
   <header>
-    <h2 class="c-title c-article__title"><a href="https://www.brutecoding.com/posts/load-server-data-before-init-app/">Load Server Side Data before Bootstrapping your Angular 5 application</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2018-02-05T19:31:15-08:00">
-        Feb 5, 2018
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Ever wanted to load server-side data before loading your application? Or ever wanted to make a HTTP request before having your application bootstrapped. You can do this by injecting HttpClient into main.ts by using the StaticInjector that was introduced in Angular 5. This is what your main.ts file should look like:
-function interceptingHandler(backend, interceptors = []) { if (!interceptors) { return backend; } return interceptors.reduceRight((next, interceptor) =&gt; new HttpInterceptorHandler(next, interceptor), backend); } class MyBrowserXHR implements XhrFactory { public build() { return new XMLHttpRequest(); } } class HttpInterceptorHandler { private next; private interceptor; constructor(next, interceptor) { this.
-  </div>
-  
-  <a href="https://www.brutecoding.com/posts/load-server-data-before-init-app/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="https://www.brutecoding.com/posts/setting-up-environment-for-angular-development/">Setting Up Environment for Angular Development</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2018-02-03T22:27:54-08:00">
-        Feb 3, 2018
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Tools you&rsquo;ll be requiring during this process  node.js angular-cli Any text editor (here are some I would recommend):  Visual Studio Code Atom Sublime 3 Notepad++   Installing node.js  I&rsquo;d recommend downloading the LTS build (current build is for devs and might have some bugs in it therefore it might be unstable)   Do not change these options unless you know what you are doing It might impact you to not be able to access node from the cmd if you make some changes here  Installing angular-cli  Start off with closing all your cmd &amp; powershell windows Ensure you have node installed:  Open cmd (by searching from the start menu or by pressing windows + r and typing in cmd) Type node -v followed by npm -v; If you recieve an error on any of the following commands go through the previous step  Install angular-cli by running npm i -g @angular/cli (-g flag enabled the flag for global) Now you&rsquo;re good to go and start creating angular applications  Creating your first Angular application  Open a shell at a location where you want the new application to be installed e.
-  </div>
-  
-  <a href="https://www.brutecoding.com/posts/setting-up-environment-for-angular-development/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-<nav class="c-pagination p-pagination">
-  <div class="c-pagination__ctrl">
-    <div class="c-pagination__newer">
+    <h1>Load Server Side Data before Bootstrapping your Angular 5 application</h1>
+    <div>
+      <div class="c-time">
+        Posted on
+        <time datetime="2018-02-05T19:31:15-08:00">
+          Feb 5, 2018
+        </time>
+      </div>
+      
+      <a href="https://www.brutecoding.com/tags/angular-bootstrapping-application" class="c-tag">angular bootstrapping application</a>
+      
+      <a href="https://www.brutecoding.com/tags/angular-environment" class="c-tag">angular environment</a>
+      
+      <a href="https://www.brutecoding.com/tags/angular-5" class="c-tag">angular 5</a>
+      
+      <a href="https://www.brutecoding.com/tags/development" class="c-tag">development</a>
+      
+      <a href="https://www.brutecoding.com/tags/angular-bootstrapping-static-classes" class="c-tag">angular bootstrapping static classes</a>
+      
+      <a href="https://www.brutecoding.com/tags/angular" class="c-tag">angular</a>
+      
+      <a href="https://www.brutecoding.com/tags/angular-5-bootstrap-main.ts" class="c-tag">angular 5 bootstrap main.ts</a>
       
     </div>
-    <div class="c-pagination__older">
-      
-    </div>
-  </div>
-  <span class="c-pagination__count p-pagination__count">Page 1 of 1</span>
-</nav>
+  </header>
+  
+  <section id="js-article" class="p-article__body">
+    
+
+<p>Ever wanted to load server-side data before loading your application? Or ever wanted to make a HTTP request before having your application bootstrapped. You can do this by injecting <code>HttpClient</code> into <code>main.ts</code> by using the <code>StaticInjector</code> that was introduced in Angular 5. This is what your <code>main.ts</code> file should look like:</p>
+
+<pre><code class="language-javascript">function interceptingHandler(backend, interceptors = []) {
+    if (!interceptors) {
+        return backend;
+    }
+    return interceptors.reduceRight((next, interceptor) =&gt;
+            new HttpInterceptorHandler(next, interceptor), backend);
+}
+
+class MyBrowserXHR implements XhrFactory {
+    public build() {
+        return new XMLHttpRequest();
+    }
+}
+
+class HttpInterceptorHandler {
+    private next;
+    private interceptor;
+
+    constructor(next, interceptor) {
+        this.next        = next;
+        this.interceptor = interceptor;
+    }
+
+    public handle(req): any {
+        return this.interceptor.intercept(req, this.next);
+    }
+}
+
+const injector = Injector.create([
+    {
+        provide:    HttpClient,
+        useFactory: (handler: HttpHandler) =&gt; { return new HttpClient(handler); },
+        deps:       [HttpHandler]
+    },
+    {
+        provide:    HttpHandler,
+        useFactory: interceptingHandler,
+        deps:       [HttpBackend, [new Optional(), new Inject(HTTP_INTERCEPTORS)]],
+    },
+    {
+        provide:    HttpBackend,
+        useClass:   HttpXhrBackend,
+        deps:       [XhrFactory]
+    },
+    {
+        provide:    XhrFactory,
+        useValue:   new MyBrowserXHR()
+    }
+]);
+
+const httpClient = injector.get(HttpClient);
+</code></pre>
+
+<h4 id="reasons-you-should-use-staticinjector-instead-of-app-initializer">Reasons you should use StaticInjector instead of APP_INITIALIZER</h4>
+
+<ul>
+<li>you need to load static data into your application before you bootstrap your main application</li>
+<li>you need to make multiple HTTP requests before the first application</li>
+</ul>
+
+  </section>
+  <footer>
+    
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'brutecoding';
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    <nav class="p-pagination c-pagination">
+      <div class="c-pagination__ctrl">
+        <div class="c-pagination__newer">
+          
+          
+        </div>
+        <div class="c-pagination__older">
+          
+          <a href="https://www.brutecoding.com/posts/setting-up-environment-for-angular-development/">Older</a>
+          
+        </div>
+      </div>
+    </nav>
+    
+
+<section class="p-related">
+  <h3>See Also</h3>
+  <ul id="slider" class="p-related__list">
+    
+    <li class="p-related__item js-related__item">
+      <a href="/posts/setting-up-environment-for-angular-development/"
+        >
+        <span>Setting Up Environment for Angular Development</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
 
 
+    
 
+  </footer>
+</article>
   </main>
   
 <nav class="l-nav p-menu">
